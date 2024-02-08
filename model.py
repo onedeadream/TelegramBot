@@ -2,7 +2,6 @@ from aiogram.fsm.state import StatesGroup, State
 from sqlalchemy import create_engine, Column, Integer, String, TIMESTAMP
 import sqlalchemy.orm as orm
 from config import URL_DATABASE
-import psycopg2
 
 Base = orm.declarative_base()
 engine = create_engine(URL_DATABASE)

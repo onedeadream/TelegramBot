@@ -1,9 +1,13 @@
 import logging
+import struct
+
 from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
 from datetime import datetime
+import paramiko
+import socket
 from model import session
 from config import TELEGRAM_API
 from model import DialogStates, Events
